@@ -1,0 +1,44 @@
+<%- include('./layout/Header') %>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">EXPRESS<span class="green-txt">DIARY</span></a>
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/About">About</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="showcase">
+        <h1>Welcome to Express<span class="green-text">diary</span> </h1>
+        <br>
+        <p>A simple Application made with Express</p>
+        <br>
+        <p>Record your daily life</p>
+        <br>
+        <!--<a href="/diary">open your express diary</a>-->
+        <div>
+            <form action="/Home" method="post">
+                <div class="from-group">
+                    <label for="loginid">ID</label>
+                    <br>
+                    <input type="int" class="from-control" id="id" name="id">
+                </div>
+                <div class="from-group">
+                    <label for="password">password</label>
+                    <br>
+                    <input type="text" class="from-control" id="password" name="password">
+                </div>
+                <br>
+                <input type="submit" value="Login" class="logininbtn">
+
+            </form>
+            <a href="/signin" class="signin">signin</a>
+        </div>
+
+
+    </div>
+    <%- include('./layout/Footer') %>
